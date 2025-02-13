@@ -9,32 +9,38 @@
     
 }
 
+.title {
+    text-align: center;
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 10px; /* Adds space below the title */
+}
+
 .logo img {
     height: 50px; /* Adjust according to logo size */
 }
 
-.text {
-    text-align: left;
-}
+
+
 
 .initiative {
-    font-size: 14px;
-    color: #555;
+    font-size: 16px;
+    color: #6a5353;
 }
 
 .ministry {
     font-size: 18px;
     font-weight: bold;
-    color: black;
+    color: rgb(48, 34, 34);
 }
 
 .mission {
     font-size: 16px;
-    color: #333;
+    color: #5b3c3c;
 }
 
 .ict {
-    color: red;
+    color: rgb(155, 94, 94);
     font-weight: bold;
 }
 
@@ -58,4 +64,8 @@
     border: none;
     cursor: pointer;
     font-size: 18px;
+}
+h1{
+    color: rgb(118, 118, 69);
+    
 }
