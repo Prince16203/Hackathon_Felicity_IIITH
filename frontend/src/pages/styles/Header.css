@@ -1,0 +1,61 @@
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 5px 40px;
+    background: rgb(213, 216, 226);
+    bottom: 20px;
+    margin-top: -10px;
+    
+}
+
+.logo img {
+    height: 50px; /* Adjust according to logo size */
+}
+
+.text {
+    text-align: left;
+}
+
+.initiative {
+    font-size: 14px;
+    color: #555;
+}
+
+.ministry {
+    font-size: 18px;
+    font-weight: bold;
+    color: black;
+}
+
+.mission {
+    font-size: 16px;
+    color: #333;
+}
+
+.ict {
+    color: red;
+    font-weight: bold;
+}
+
+.search-bar {
+    display: flex;
+    align-items: center;
+    border: 1px solid #ccc;
+    border-radius: 20px;
+    padding: 5px 10px;
+}
+
+.search-bar input {
+    border: none;
+    outline: none;
+    padding: 5px;
+    font-size: 14px;
+}
+
+.search-bar button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 18px;
+}
