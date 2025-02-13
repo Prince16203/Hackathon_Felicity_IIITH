@@ -1,0 +1,16 @@
+nav, ul{
+    display:flex;
+    background-color:beige;
+    justify-content: center;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+li{
+    list-style: none;
+}
+ul{
+    gap: 34px;
+}
+div{
+    margin-top: 100px;
+}
