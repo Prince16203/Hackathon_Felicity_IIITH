@@ -1,12 +1,10 @@
 .header {
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: left;
     padding: 5px 40px;
     background: rgb(213, 216, 226);
-    bottom: 20px;
-    margin-top: -10px;
-    
+    bottom: 20px;    
 }
 
 .title {
@@ -14,6 +12,7 @@
     font-size: 24px;
     font-weight: bold;
     margin-bottom: 10px; /* Adds space below the title */
+    padding-right: 4%;
 }
 
 .logo img {
@@ -45,6 +44,8 @@
 }
 
 .search-bar {
+    position:absolute;
+    right: 7.5%;
     display: flex;
     align-items: center;
     border: 1px solid #ccc;

@@ -2,12 +2,11 @@ nav, ul{
     display:flex;
     background-color:rgb(193, 188, 225);
     justify-content: center;
-    margin-top: 15px;
     margin-bottom: 15px;
 }
 li{
     list-style: none;
 }
 ul{
-    gap: 34px;
+    gap: 20px;
 }
