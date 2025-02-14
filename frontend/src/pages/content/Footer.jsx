@@ -3,80 +3,74 @@ import { Mail, Phone, MapPin } from "lucide-react";
 
 const Footer = () => {
   return (
-    <footer style={styles.footer}>
-      <div style={styles.section}>
-        <h3 style={styles.heading}>Quick Links</h3>
-        <ul style={styles.list}>
-          <li style={styles.listItem}><a href="#" style={styles.link}>Lab Feedback Form</a></li>
-          <li style={styles.listItem}><a href="#" style={styles.link}>Lab Assessment Form</a></li>
-          <li style={styles.listItem}><a href="#" style={styles.link}>FAQ</a></li>
-          <li style={styles.listItem}><a href="#" style={styles.link}>Shakshat Portal</a></li>
-        </ul>
+    <div style={styles.pageContainer}>
+      <div style={styles.content}>
+        {}
       </div>
-      
-      <div style={styles.section}>
-        <h3 style={styles.heading}>About VLAB</h3>
-        <ul style={styles.list}>
-          <li style={styles.listItem}><a href="#" style={styles.link}>Home</a></li>
-          <li style={styles.listItem}><a href="#" style={styles.link}>About us</a></li>
-          <li style={styles.listItem}><a href="#" style={styles.link}>Contact Us</a></li>
-        </ul>
-      </div>
-      <div style={styles.section}>
-        <h3 style={styles.heading}>Get In Touch With Us</h3>
-        <p style={styles.text}><Mail size={16} /> support@vlab.co.in</p>
-        <p style={styles.text}><Phone size={16} /> 011-26582050</p>
-        <p style={styles.text}>
-          <MapPin size={16} /> Wireless Research Lab, Room No - 206/IIA,<br />
-          Bharti School of Telecom, IIT Delhi,<br />
-          Hauz Khas, New Delhi-110016
-        </p>
-      </div>
-    </footer>
+      <footer style={styles.footer}>
+        <div style={styles.footerContainer}>
+          <div style={styles.section}>
+            <h3 style={styles.heading}>Quick Links</h3>
+            <ul style={styles.list}>
+              <li><a href="#">Lab Feedback Form</a></li>
+              <li><a href="#">Lab Assessment Form</a></li>
+              <li><a href="#">FAQ</a></li>
+              <li><a href="#">Shakshat Portal</a></li>
+            </ul>
+          </div>
+          <div style={styles.section}>
+            <h3 style={styles.heading}>About VLAB</h3>
+            <ul style={styles.list}>
+              <li><a href="#">Home</a></li>
+              <li><a href="#">About us</a></li>
+              <li><a href="#">Contact Us</a></li>
+            </ul>
+          </div>
+          <div style={styles.section}>
+            <h3 style={styles.heading}>Get In Touch With Us</h3>
+            <p>📧 support@vlab.co.in</p>
+            <p>📞 011-26582050</p>
+            <p>📍 Wireless Research Lab, Room No - 206/IIA, Bharti School of Telecom, IIT Delhi, Hauz Khas, New Delhi-110016</p>
+          </div>
+        </div>
+      </footer>
+    </div>
   );
 };
 
 const styles = {
+  pageContainer: {
+    minHeight: "140vh", // Ensures scrolling
+    display: "flex",
+    flexDirection: "column",
+  },
+  content: {
+    flex: 1, // Pushes footer down
+  },
   footer: {
     backgroundColor: "#262626",
     color: "white",
+    padding: "20px 40px",
+  },
+  footerContainer: {
     display: "flex",
-    justifyContent: "space-around",
-    alignItems: "center",
-    padding: "20px",
-    position: "fixed",
-    bottom: 0,
-    width: "100%",
-    fontSize: "14px"
+    justifyContent: "space-between",
+    maxWidth: "1200px",
+    margin: "0 auto",
   },
   section: {
     flex: 1,
-    textAlign: "center"
+    padding: "10px",
   },
   heading: {
     fontSize: "16px",
-    fontWeight: "bold"
+    fontWeight: "bold",
+    marginBottom: "10px",
   },
   list: {
-    listStyleType: "none",
+    listStyle: "none",
     padding: 0,
-    margin: 0
   },
-  listItem: {
-    marginTop: "5px"
-  },
-  link: {
-    color: "white",
-    textDecoration: "none",
-    display: "block"
-  },
-  qrCode: {
-    width: "80px",
-    height: "80px"
-  },
-  text: {
-    margin: "5px 0"
-  }
 };
 
 export default Footer;
