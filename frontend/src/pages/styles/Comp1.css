@@ -1,5 +1,5 @@
-nav, ul{
-    display:flex;
+.lg{
+    display:inline-flex;
     background-color:rgb(193, 188, 225);
     justify-content: center;
     margin-bottom: 15px;
